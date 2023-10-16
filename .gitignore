@@ -1,0 +1,6 @@
+/.qmake.stash
+/.vscode
+/Makefile
+/build
+/pnpbuilder
+/pnpbuilder.code-workspace
