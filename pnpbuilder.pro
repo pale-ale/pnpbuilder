@@ -1,9 +1,11 @@
-SOURCES += main.cpp
+# SOURCES += main.cpp
+# 
+# QMAKE_CXXFLAGS += -std=c++20
+# 
+# CONFIG += debug testcase no_testcase_installs
 
-QT += widgets
-
-LIBS += -lsfml-graphics -lsfml-window -lsfml-system
-
-QMAKE_CXXFLAGS += -std=c++20
-
-CONFIG += debug
+TEMPLATE = subdirs
+SUBDIRS = src client server tests
+client.depends = src
+server.depends = src
+tests.depends = src

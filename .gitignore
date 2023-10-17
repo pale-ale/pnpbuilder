@@ -1,6 +1,13 @@
 /.qmake.stash
 /.vscode
-/Makefile
+/**/Makefile
 /build
 /pnpbuilder
 /pnpbuilder.code-workspace
+/target_wrapper.sh
+**.o
+/server/server
+/client/client
+/tests/tests
+moc_*
+*.a
