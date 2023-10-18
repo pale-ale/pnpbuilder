@@ -12,7 +12,7 @@ public:
   template <typename ComponentType>
   const ComponentType *getComponentOfType() const {
     for (auto &&component : components) {
-      auto *p = static_cast<const ComponentType *>(component);
+      auto *p = dynamic_cast<const ComponentType *>(component);
       if (p != nullptr) {
         return p;
       }
