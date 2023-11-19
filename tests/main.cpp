@@ -1,4 +1,5 @@
-#include "TestComponentSystem.hpp"
+#include "ComponentSystem/TestComponentSystem.hpp"
+#include "Network/TestNetwork.hpp"
 #include <QTest>
 
 int main(int argc, char *argv[]) {
@@ -8,6 +9,7 @@ int main(int argc, char *argv[]) {
 
   int status = 0;
   status |= runTest(new TestComponentSystem);
+  status |= runTest(new TestNetwork);
 
   return status;
 }
